@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+</head>
+<body>
+    <form action="/contact" method="post">
+        <h1>CONTACT FORM</h1>
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text"
+            minlength="2"
+            maxlength="50"
+            required
+            placeholder="Enter your full name"
+            />
+        </div>
+       
+        <div>
+            <label for="email">Email Address:</label>
+            <input 
+            type="email" 
+            required 
+            placeholder="Enter your email address"
+            />
+        </div>
+
+        <div>
+        <label for="phoneNo">Phone Number: </label>
+        <input
+          id="phoneNo"
+          type="number"
+          placeholder="(xxx) xxx-xxxx"
+        />
+      </div>
+      <div>
+        <label for="compayny">Company:</label>
+        <input type="text" placeholder="Enter your Company Name"/>
+      </div>
+
+      <div>
+        <label for="subject">Subject:</label>
+        <select name="" id="subject" required>
+            <option value="generalInquiry">General Inquiry</option>
+            <option value="technicalSupport">Technical Support</option>
+            <option value="salesQuestion">Sales Question</option>
+            <option value="billingIssue">Billing Issue</option>
+            <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="priorityLevel">Priority Label</label>
+
+            <input type="radio" value="low" name="level">
+            <label for="Low">Low</label>
+
+            <input type="radio" value="medium" name="level">
+            <label for="Medium">Medium</label>
+
+            <input type="radio" value="high" name="level">
+            <label for="High" >High</label>
+            
+            <input type="radio" value="urgent" name="level">
+            <label for="urgent" >Urgent</label>
+      </div>
+
+      <!-- <div>
+        <input type="checkbox" id="emailcontact" />
+        <label for="accept">Email</label>
+
+        <input type="checkbox" id="phoneContact" />
+        <label for="accept">Phone</label>
+        
+        <input type="checkbox" id="">
+      </div> -->
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="5" cols="50" required >Enter your message here......</textarea>
+      </div>
+      <div>
+        <Label for="file"></Label>
+        <input type="file" accept=".pdf, .doc, .jpeg, .jpg"/>
+      </div>
+
+      <div>
+        <input type="submit" value="send">
+        <input type="reset" value="Reset">
+      </div>
+
+     <div>
+        <input type="checkbox" id="agreement" />
+        <label for="accept">I agree to the privacy policy agreeement </label>
+      </div>
+
+    </form>
+    
+</body>
+</html>
